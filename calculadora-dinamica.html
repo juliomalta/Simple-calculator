@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <script>
+      var primNum = prompt('informe o primeiro número');
+      var sinal = prompt('informe o sinal da operação');
+
+      while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){alert('insira operação válida');
+       sinal = prompt('informe o sinal da operação');}
+
+      var segNum = prompt('informe o segundo número');
+      primNum = parseInt(primNum);
+      segNum = parseInt(segNum);
+
+      var total = 0;
+
+      //cálculos
+      if(sinal == '-'){
+        total = primNum - segNum;
+      }else if(sinal == '+'){
+        total = primNum + segNum;      
+      }else if(sinal == '/'){
+        total = primNum / segNum;      
+      }else if(sinal == '*'){
+        total = primNum * segNum;      
+      }
+      alert('o resultado é '+ total);
+
+
+    </script>
+  </body>
+</html>
